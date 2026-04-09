@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "AI书签整理大师 (DeepSeek版)",
+  "version": "1.0",
+  "description": "一键调用 DeepSeek 大模型，自动对浏览器书签进行语义聚类和分类重组。",
+  "permissions": [
+    "bookmarks",
+    "storage",
+    "downloads"
+  ],
+  "host_permissions": [
+    "https://api.deepseek.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
